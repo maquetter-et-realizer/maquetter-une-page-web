@@ -1,0 +1,118 @@
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/*NAVIGATION BAR*/
+nav{
+    background-color: #F2BDE9;
+    width: 100%;
+    height: 70px;
+    display: grid;
+    grid-template-columns: 100px 863px 318px;
+    grid-template-rows: 1px 70px ;
+    padding-top: 5px;
+    padding: 0;
+    position: fixed;
+}
+
+#navlogo{
+    height: 52px;
+    width: 68px;
+    margin-top: 8px;
+    margin-left: 25px;
+    grid-column-start: 1px;
+    grid-column-end: 100px;
+}
+
+#navlist{
+    display: flex;
+    list-style: none;
+    grid-column-start: 100px;
+    grid-column-end: 863px;
+
+}
+
+.nav_a{
+    text-decoration: none;
+    padding: 30px;
+    margin-left: 9px;
+    text-align: center;
+    color: #000;
+}
+
+.nav_a:hover{
+    background-color: #f8c6ef;
+    color: #000;
+}
+
+#navbuttons{
+    grid-column-start: 863px;
+    grid-column-end: 318px;
+}
+
+#login{
+    height: 70px;
+    width: 114px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: #F2BDE9;
+    color: #544352    ;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#login:hover{
+    background-color: #f8c6ef;
+}
+
+#Gtstarted{
+    height: 70px;
+    width: 166px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: #8C0343;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+#Gtstarted:hover{
+    background-color: #c0025b;
+}
+
+
+/*PAGE HEADER*/
+
+#nav_header{
+    height: 590px;
+    width: 100%;
+    background-color: #F2BDE9;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 70px 140px 450px;
+}
+
+#nav_header h1{
+    grid-column-start: 1;
+    grid-row-start: 70px; 
+    margin-top: 150px;
+    margin-left: 50px;
+    font-size: 38px;
+    color: #750430;
+    width: 658px;
+}
+
+#nav_header p{
+    color: #000;
+    grid-column-start: 1;
+    grid-row-start: 140px;
+    float: left;
+    margin-top: 180px;
+    margin-left: 60px;
+    width: 514px;
+}
