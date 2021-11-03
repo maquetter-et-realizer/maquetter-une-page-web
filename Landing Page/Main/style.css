@@ -16,6 +16,7 @@ nav{
     padding-top: 5px;
     padding: 0;
     position: fixed;
+    z-index: 2;
 }
 
 #navlogo{
@@ -69,7 +70,7 @@ nav{
     background-color: #f8c6ef;
 }
 
-#Gtstarted{
+#gtstarted_n{
     height: 70px;
     width: 166px;
     padding: 0;
@@ -81,23 +82,23 @@ nav{
     font-weight: 400;
 }
 
-#Gtstarted:hover{
+#gtstarted_n:hover{
     background-color: #c0025b;
 }
 
 
 /*PAGE HEADER*/
 
-#nav_header{
+#page_header{
     height: 590px;
     width: 100%;
     background-color: #F2BDE9;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 70px 140px 450px;
+    grid-template-columns: 185px 442px 799px;
+    grid-template-rows: 70px 140px 124px 66px 260px;
 }
 
-#nav_header h1{
+#page_header h1{
     grid-column-start: 1;
     grid-row-start: 70px; 
     margin-top: 150px;
@@ -107,7 +108,7 @@ nav{
     width: 658px;
 }
 
-#nav_header p{
+#page_header p{
     color: #000;
     grid-column-start: 1;
     grid-row-start: 140px;
@@ -116,3 +117,61 @@ nav{
     margin-left: 60px;
     width: 514px;
 }
+
+#gtstarted_h{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-right: 70px;
+    margin-left: 115px;
+    background-color: #f2f2f2;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#gtstarted_h:hover{
+    background-color: #8C0343;
+    color: #fff;
+}
+
+#head_image1{
+    width: 427px;
+    height: 277.5px;
+    grid-column-start: 3;
+    margin-top: 50px;
+    margin-left: 150px;
+    z-index: 0;
+}
+
+#head_image2{
+    grid-column-start: 3;
+    margin-top: 50px;
+    margin-left: 70px;
+    width: 213px;
+    height: 285px;
+    z-index: 1;
+    opacity: 60%;
+}
+
+
+
+/*main*/
+
+        /*SLIDE1*/
+
+    #slide1{
+        background-image: url("assets/Images/Backgroundimg.png");
+        width: 1263px;
+        height: 600px;
+        grid-template-columns: 30% 20% 50%;
+        grid-template-rows: 50% 50%;
+    }
+
+    #slide1 h2{
+        margin: 0;
+        width: 514px;
+        font-size: 42px;
+        font-weight: 700;
+    }
