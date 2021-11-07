@@ -12,7 +12,7 @@ nav{
     width: 100%;
     height: 70px;
     display: grid;
-    grid-template-columns: 100px 863px 318px;
+    grid-template-columns: 200px 763px 318px;
     grid-template-rows: 1px 70px ;
     padding-top: 5px;
     padding: 0;
@@ -20,21 +20,32 @@ nav{
     z-index: 2;
 }
 
+#page-name a{
+    color: #8C0343;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
 #navlogo{
     height: 52px;
     width: 68px;
     margin-top: 8px;
     margin-left: 25px;
-    grid-column-start: 1px;
-    grid-column-end: 100px;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 
 #navlist{
     display: flex;
     list-style: none;
-    grid-column-start: 100px;
-    grid-column-end: 863px;
-
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-top: 8px;
 }
 
 .nav_a{
@@ -53,8 +64,8 @@ nav{
 }
 
 #navbuttons{
-    grid-column-start: 863px;
-    grid-column-end: 318px;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 
 #login{
@@ -172,14 +183,20 @@ nav{
         width: 1263px;
         height: 620px;
         display: grid;
-        grid-template-columns: 30% 20% 50%;
+        grid-template-columns: 60% 40%;
+
+    }
+
+    #txt{
+        display: grid;
+        grid-template-columns: 50% 50%;
         grid-template-rows: 32% 18% 50%;
     }
 
     #slide1 h2{
         margin: 0;
         margin-top: 100px;
-        margin-left: 150px;
+        margin-left: 100px;
         width: 514px;
         font-size: 42px;
         font-weight: 700;
@@ -190,7 +207,7 @@ nav{
         font-size: 30px;
         font-weight: 400;
         width: 631px;
-        margin-left: 170px;
+        margin-left: 120px;
     }
 
     #sd1lnk{
@@ -200,39 +217,49 @@ nav{
         font-weight: 700;
         width: 407px;
         margin-left: 380px;
+        height: fit-content;
     }
 
     #sd1lnk a{
         color: #544352;
         text-decoration: none;
+
+    }
+
+    .images{
+        width: auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        
     }
 
     #srvc{
         width: 200px;
         height: 130px;
-        grid-column-start: 3;
-        grid-row-start: 3;
-        margin-left: 150px;
+        margin-left:0px;
         margin-top: 100px;
+        grid-row-start: 2;
+        grid-column-start: 1;
+        
     }
 
     #prtf{
+        grid-column-start: 1;
+        grid-row-start: 2;
         width: 280px;
         height: 169.69px;
-        grid-column-start: 3;
-        grid-row-start: 3;
-        margin-left: 270px;
-        margin-top: 150px;
+        margin-top: 130px;
+        margin-left: 170px;
     }
 
     #bsns{
         width: 250px;
         height: 153px;
-        grid-column-start: 3;
-        grid-row-start: 3;
-        margin-left: 350px;
-    }
+        grid-column-start: 2;
+        grid-row-start: 2;
 
+    }
 
     /*SLIDE 2*/
 
@@ -278,7 +305,7 @@ grid-row-end: 3;
  }
 
  #pinklink1{
-
+     margin-top: 40px;
     margin-left: 190px;
     height: fit-content;
     width: fit-content;
@@ -287,6 +314,9 @@ grid-row-end: 3;
     border: none;
     width: 197px;
     height: 40px;
+ }
+ #slide2 h3{
+     padding-bottom: 30px;
  }
 
  #pinklink1 a{
@@ -338,7 +368,7 @@ grid-row-end: 3;
 #pinklink2{
 
    margin-left: 190px;
-   margin-top: 10px;
+   margin-top: 40px;
    height: fit-content;
    width: fit-content;
    border-radius: 7px;
@@ -356,6 +386,8 @@ grid-row-end: 3;
    font-size: 20px;
    font-weight: 700;
    color: #000;
+
+
 }
 
 #pinkers3{
@@ -531,6 +563,12 @@ grid-row-end: 3;
     margin-left: 700px;
 }
 
+#btm-link{
+    color: #5C1D3B;
+    font-size: 30px;
+    font-weight: 700;
+}
+
 
 
 
@@ -543,9 +581,12 @@ footer{
 #ftr1{
     height: 350px; 
     background-color: #000;
-    display: flex;
     justify-content: space-around;  
     width: 100%;
+}
+
+.ftrli{
+    display: flex;
 }
 
 footer ul{
@@ -590,6 +631,7 @@ footer ul li .fab{
 
 .last-footer-items {
     display: block;
+    margin-left: 60px;
 }
 .last-footer-items span h3 {
     color : #E19E9E;
@@ -598,6 +640,7 @@ footer ul li .fab{
 }
 .title-laster-footer {
     color : #8C0343;
+    font-weight: 700;
 }
 .fab {
     padding-right: 10px;
@@ -655,12 +698,453 @@ input[type=text] {
     color: #920949;
 }
 
-@media all and (max-width:500px) {
-    #page_header {
-       width: 100%;
-       height: 100vh;
-       background-color : red ;
-       display : flex; 
-       flex-direction: column;
-   }
+
+
+#click:checked~ul{
+    left: 0%;
 }
+#click{
+    display: none;
+}
+.menu{
+    color: #8C0343;
+    font-size: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:500px) {
+    #navbuttons{
+        display: none;
+    }
+ 
+   .menu {
+       display: block;
+       margin-right: 10px;
+
+   }
+   nav{
+       display: flex;
+       justify-content: space-between;
+   }
+   nav ul{
+       position: fixed;
+       top: 50px;
+       left: -120%;
+       height: 70vh;
+       margin-left: -25px;
+       background-color: #f1d5ed;
+       justify-content: center;
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       transition: all 0.3s ease;
+       z-index: 2;
+       
+   }
+   nav ul li{
+       margin-top: 0px;
+       z-index: 2;
+   }
+   
+ 
+   nav ul li a{
+       display: block;
+       padding: 20px !important;
+   }
+   nav ul li a:hover{
+       color: #c0025b !important; 
+       background-color: white !important;
+       border-radius: 5px;
+       font-weight: bold !important;
+   }
+    ul{
+     padding-top: 0px !important;
+    }
+
+    #page_header h1{
+        width: 450px !important;
+        height: 80px;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 40px;
+        flex-wrap: wrap;
+        color: #750430;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-left: 30px;
+        
+        
+    }
+    #page_header p{
+        order: 2;
+        padding-left: 50px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 40px;
+        font-size: 20px;
+        font-weight: 500px;
+    }
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #page_header{
+        padding-top: 40px;
+        padding-left: 0px;
+    }
+    #page_header{
+        height: 900px;
+    }
+    #head_image1{
+        display: flex;
+        
+        margin-left: -160px !important;
+        padding-top: 500px;
+        justify-content: flex-start;
+        width: 327px;
+        height: 190.5px;
+    }
+    #head_image2{
+        margin-left: -10px !important;
+        margin-top: 600px;
+    }
+
+    #slide1{
+        background-image: url("assets/Images/Backgroundimg.png");
+        
+        width: 1263px;
+        height: 1600px;
+    }
+    #gtstarted_h{
+        border-radius: 5px;
+    }
+    #gtstarted_h:hover{
+        background-color: #920949;
+        font-weight: bold;
+        color: white;
+    }
+    #slide1{
+        display: flex;
+        flex-direction: column;
+    }
+    #slide1 h2{
+      margin-left: 0px;
+      width: 400px;
+      font-size: 30px;
+      font-weight: bold;
+      padding-left: 30px;
+    }
+    #slide1 p{
+        margin-left: 0px;
+        width: 400px;
+        font-size: 20px;
+        font-weight: 600px;
+        padding-left: 30px;
+    }
+    #slide1 span{
+        margin-left: 0px;
+        width: 400px;
+        padding-left: 30px;
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: underline #920949 3px;
+
+    }
+    #slide1{
+        background-image: url("assets/Images/Backgroundimg.png");
+        background-size: contain;
+        width: 100%;
+        height: 620px;
+       
+    }
+    .images{
+        margin-left: -120px !important;
+        margin-bottom: 0px;
+    }
+
+    #slide2{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    #slide3{
+        display: flex;
+        flex-direction: column;
+    }
+    #page_header P{
+        margin-left: 0PX;
+        margin: 0px;
+        width: 400px;
+    }
+    #slide2 p{
+        width: 400px;
+        margin: 0px;
+    }
+    #slide3 h3{
+        margin-left: 0px;
+        width: 400px;
+    }
+    #ftr1{
+        display: flex;
+        flex-direction: column;
+    }
+    #vid{
+        width: 400px;
+    }
+    #slide4{
+        margin-left: 0px !important;
+    }
+    #slide2 #frst #pinkers1{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 40px;
+        font-weight: 300px;
+        
+    }
+
+    #scnd h3{
+        margin-top: -130;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left:  40px;
+    }
+    
+    #scnd P{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left:  40px;
+    }
+    #thrd h3{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left:  40px;
+    }
+    #thrd p{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left:  40px;
+    }
+    #slide2{
+        background-color: #000;
+        height: 1100px;
+        width: auto ;
+    }
+    #slide3 h3{
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    #vid{
+        height: 380px;
+    }
+    #slide3{
+        background-color: #f4f4f4;
+        height: 1000px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .numberone{
+        
+    }
+    #slide3{
+        display: flex;
+    }
+
+    /*slide1 media query*/
+    #slide2{
+        width: auto;
+    }
+    #slide1 p{
+   
+        font-size: 18px;
+        font-weight: 400;
+        width: 331px;
+        margin-top: 70px;
+        margin-left: 30px;
+    }
+
+    #sd1lnk {
+        color: #544352;
+        margin-top: 70px;
+
+    }
+
+    .images{
+        display: flex;
+        flex-direction: column;
+    }
+    #srvc{
+        width: 170px;
+        height: 100px;
+        margin-left: 120px;
+        margin-bottom: 10px;
+        margin-top: 0;
+        z-index: 0;
+    }
+
+    #prtf{
+        width: 220px;
+        height: 119.69px;
+
+        margin-left: 300px;
+        margin-top: 10px;
+        z-index: 2;
+    }
+
+    #bsns{
+        width: 210px;
+        height: 103px;
+        margin-left: 300px;
+        margin-bottom: 200px;
+        z-index: 1;
+    }
+
+
+
+    /*SLide2 media query*/
+    #pinklink1{
+
+        margin-left: 190px;
+        height: fit-content;
+        width: fit-content;
+        border-radius: 7px;
+        background-color: #F2BDE9;
+        border: none;
+        width: 197px;
+        height: 40px;
+     }
+
+     #pinklink2{
+        margin-left: 190px;
+        margin-top: 30px;
+        height: fit-content;
+        width: fit-content;
+        border-radius: 7px;
+        background-color: #F2BDE9;
+        border: none;
+        width: 197px;
+        height: 40px;
+     
+     }
+
+     #pinklink3{
+
+        margin-left: 190px;
+        margin-top: 10px;
+        height: fit-content;
+        width: fit-content;
+        border-radius: 7px;
+        background-color: #F2BDE9;
+        border: none;
+        width: 197px;
+        height: 40px;
+     
+     }
+     #frst h3{
+        padding-left:  40px
+     }
+
+     #frst p{
+        padding-left:  40px
+     }
+    
+
+
+
+
+    /*Slide3  media query*/
+
+    #slide3{
+        height: fit-content;
+    }
+
+    #slide3 h3{
+        font-size: 30px;
+        font-weight: 900;
+        width: 400px;
+        text-align: center;
+        color: #8C0343;
+        margin: 0;
+        margin-left: 50px;
+    }
+
+    .numbers{
+        width: fit-content;
+        height: fit-content;
+        font-size: 70px;
+        font-weight: 900;
+        margin: 40px;
+        margin-left: 70px;
+    }
+
+    #list{
+        font-size: 16px;
+    }
+
+
+
+    #slide4 h1{
+        font-weight: 900;
+        font-size: 37px;
+        text-align: center;
+        width: 339;
+        margin: 0;
+        padding-top: 80px;
+    }
+
+    #slide4{
+        height: 300px;
+    }
+    
+
+    /*footer mq*/
+
+    #ftr1{
+        height: fit-content; 
+        background-color: #000;
+        width: 100%;
+    }
+
+    .ftrli{
+        display: block;
+    }
+
+    #btm-link{
+display: none;
+    }
+    
+    
+}
+
+
+ 
+

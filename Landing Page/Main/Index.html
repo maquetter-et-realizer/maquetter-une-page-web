@@ -15,6 +15,9 @@
 <body>
     <nav>
         <img alt="logo" id="navlogo" src="assets/Icons/Main-logo-clr.png">
+        <span id="page-name"><a href="#">OUTERSPACE</a></span>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu">☰</label>
         <ul id="navlist">
             <li><a class="nav_a" href="#">Products</a></li>
             <li><a class="nav_a" href="#">Templates</a></li>
@@ -33,26 +36,30 @@
              AND GROW YOUR BUSINESS ONLINE</h1>
              <p>Start your free website trial today. No credit card required.</p>
              <button id="gtstarted_h" href="#">Get Started</button>
+
              <img src="assets/Images/1st-site-example.PNG" id="head_image1">
              <img src="assets/Images/2nd-site-example.PNG" id="head_image2">
     </header>
 
     <main>
         <div id="slide1">
+            <div id="txt">
             <h2>WE HAVE A TEMPLATE,
                 FOR ALL YOUR PURPOSES</h2>
                 
                 <p>Start with a simple template,<br>
                     then customize it to fit your professional needs</p>
                     <span id="sd1lnk"><a href="#">Explore All The Templates →</a></span>
-
+                </div>
+             <div class="images">
                     <img id="srvc" src="assets/Images/Services.png">
                     <img id="prtf" src="assets/Images/Portfolio.png">
                     <img id="bsns" src="assets/Images/Local business.png">
+            </div>       
         </div>
 
         <div id="slide2">
-            <div id="frst">
+            <div id="frst" class="seling">
                 <h3 id="pinkers1">SELL ANYTHING</h3>
             <p>Whether you’re just getting started or are<br>
                 an established brand, our powerful commerce<br>
@@ -60,8 +67,8 @@
                 <button id="pinklink1"><a href="#">Start Selling</a></button>
             </div>
 
-            <div id="scnd">
-                <h3 id="pinkers2">E-commerce made easy</h3>
+            <div id="scnd" class="seling">
+                <h3 id="pinkers2">E-commerce easy</h3>
                 <p>Get everything you need to power your online store, 
                     from merchandising to checkout, and showcase your
                      products or services at their absolute best.
@@ -69,7 +76,7 @@
                     <button id="pinklink2"><a href="#">Explore Commerce</a></button>
                 </div>
 
-                <div id="thrd">
+                <div id="thrd" class="seling">
                     <h3 id="pinkers3">Expand your site<br>
                         with extensions</h3>
                     <p>Easily sync with third-party extensions to 
@@ -82,7 +89,7 @@
         </div>
 
         <div id="slide3">
-            <div>
+            <div class="numberone">
                 <h3>GROW YOUR BUSINESS ONLINE</h3>
                 <video id="vid" type="video/mp4" controls autoplay loop>
                     <source src="assets/Video/pagevid.mp4" type="video/mp4">
@@ -136,7 +143,9 @@
                 <h1>TURN YOUR IDEAS<br>
                     INTO REALITY
                 </h1>
-                <a href="#">START FREE TRIAL</a>
+
+                <a id="btm-link" href="#">START FREE TRIAL</a>
+                
             </div>
 
 
@@ -144,7 +153,7 @@
 
     <footer id="ftr1">
         
-        
+        <div class="ftrli">
             <ul class="links">
                 <li><span class="headtitles">Products</span></li>
             <li><a href="#">Website Templates</a></li>
@@ -211,6 +220,8 @@
                    <i class="fas fa-search"></i> 
                 </span>
             </ul>
+            </div>
+
     </footer>
 
     <footer id="ftr2">
