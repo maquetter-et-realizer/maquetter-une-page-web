@@ -881,7 +881,7 @@ input[type=text] {
        
     }
     .images{
-        margin-left: -120px !important;
+        margin-left: 0px !important;
         margin-bottom: 0px;
     }
 
@@ -972,9 +972,7 @@ input[type=text] {
         display: grid;
         grid-template-columns: 50% 50%;
     }
-    .numberone{
-        
-    }
+    
     #slide3{
         display: flex;
     }
@@ -1003,28 +1001,28 @@ input[type=text] {
         flex-direction: column;
     }
     #srvc{
-        width: 170px;
-        height: 100px;
-        margin-left: 120px;
+        width: 200px;
+        height: 130px;
+        margin-left: 100px;
         margin-bottom: 10px;
-        margin-top: 0;
+        margin-top: 200px;
         z-index: 0;
     }
 
     #prtf{
         width: 220px;
         height: 119.69px;
-
-        margin-left: 300px;
-        margin-top: 10px;
+        margin-left: 180px;
+        margin-top: -250px;
         z-index: 2;
     }
 
     #bsns{
         width: 210px;
         height: 103px;
-        margin-left: 300px;
-        margin-bottom: 200px;
+        margin-left: 250px;
+        margin-bottom: 500px;
+        margin-top: -220px;
         z-index: 1;
     }
 
@@ -1032,8 +1030,8 @@ input[type=text] {
 
     /*SLide2 media query*/
     #pinklink1{
-
-        margin-left: 190px;
+        margin-top: 50px;
+        margin-left: 40px;
         height: fit-content;
         width: fit-content;
         border-radius: 7px;
@@ -1044,8 +1042,8 @@ input[type=text] {
      }
 
      #pinklink2{
-        margin-left: 190px;
-        margin-top: 30px;
+        margin-left: 40px;
+        margin-top: 50px;
         height: fit-content;
         width: fit-content;
         border-radius: 7px;
@@ -1058,8 +1056,8 @@ input[type=text] {
 
      #pinklink3{
 
-        margin-left: 190px;
-        margin-top: 10px;
+        margin-left: 40px;
+        margin-top: 50px;
         height: fit-content;
         width: fit-content;
         border-radius: 7px;
@@ -1140,6 +1138,13 @@ input[type=text] {
 
     #btm-link{
 display: none;
+    }
+    #slide1{
+        background-image: url("assets/Images/Backgroundimg.png");
+        background-size: contain;
+        width: 400px;
+        height: 820px;
+
     }
     
     
